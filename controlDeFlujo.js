@@ -26,7 +26,7 @@ if (condicion){
 
 */
 
-//Felipe tiene 17 anios y quiere ir a una fiesta. Dicha fiesta solo es para personas adultas (mayores de 18 anios). Ayuda a Itzel decidir si puede ir a la fiesta o no.
+//Felipe tiene 17 anios y quiere ir a una fiesta. Dicha fiesta solo es para personas adultas (mayores de 18 anios). Ayuda a Felipe decidir si puede ir a la fiesta o no.
 
 //Evaluamos solo una expresión (si Felipe tiene mas de 18 anios), en caso de que sea verdadero, mostraremos el mensaje dentro del bloque. Si es falso, no mostrara nada porque nuestro programa no esta preparado para esa situación(incertidumbre).
 
@@ -78,3 +78,52 @@ else {
 - NaN
 - false (boolean dispara verdadero) 
 */
+
+
+
+/*
+
+Else If (ademas si / si no entonces)
+
+Esta condicional nos ayuda a ejecutar una nueva condicion en caso de que la primera sea falsa. Podemos usar todas las estructuras else if que sean necesarias, terminando con una estructura else.
+
+
+Estructura basica del else if
+
+
+if (condicion 1) {
+    //bloque de codigo que se ejecuta si la condicion 1 es verdadera
+} else if (condicion 2){
+    //bloque de codigo que se ejecuta si la condicion 1 es falsa y la condicion 2 es verdadera
+} else if (condicion 3){
+    //bloque de codigo se ejecuta si la condicon 1 es falsa, y si la condicon 2 tambien es falsa
+}else{
+    //bloque de codigo que se ejecuta si la condicion 1, 2 y 3 son falsas
+}
+
+
+Se pueden anidar x cantidad de else if entre el if que evalua la condicion inicial y el else que termina toda la expresion.
+
+edadDeDavid = 19;
+edadPermitidaDelAntro = 18;
+dineroDeDavid = 20;
+coverDelAntro = 150;
+
+if (edadDeDavid > edadPermitidaDelAntro){
+    console.log("Muy bien, puedes ir al antro");
+} else if (dineroDeDavid > coverDelAntro){
+    console.log("Si puede entrar al antro");
+} else {   
+    console.log("Lo siento, no tienes dinero suficiente para pagar el cover");
+}
+
+*/
+
+let hora = prompt("Ingrese la hora actual");
+if (hora < 12){
+    console.log("Buenos días");
+} else if (hora <=19){
+    console.log("Buenas tardes ya.");
+} else {   
+    console.log("Buenas noches, vamos a dormir.");
+}
