@@ -41,7 +41,7 @@
 
 
 
-<!-- Front para nuestro contador de memes -->
+<!-- Front para nuestro contador de memes 
 
 <div>
 
@@ -62,7 +62,51 @@
  
 
 
-<script src="./contadorDeMemes.js"></script> 
+<script src="./contadorDeMemes.js"></script> -->
+
+
+
+<form>
+    <label for="nombreProducto"> Nombre del producto</label>
+    <input type="text" id="nombreProducto">
+    <br/>
+    <br/>
+
+    <label for="descripcionProducto"> Descripcion</label>
+    <input type="text" id="descripcionProducto">
+    <br/>
+    <br/>
+
+    <label for="imagenProducto"> Imagen del producto</label>
+   <input type="file" id="imagenProducto">
+   
+
+</form>
+
+
+
+<br/>
+<br/>
+
+<button id="agregar-producto">Agregar Producto</button>
+<br/>
+<br/>
+<br/>
+
+
+
+    <!--Vamos a "pintar" el HTML-->
+    <div id="product-container"> <!--Este es el padre-->
+        
+
+
+
+</div>
+
+
+
+
+<script src="./tarjetaProducto.js"></script>
 
 
 </body>
